@@ -6,3 +6,7 @@ const socket = io.connect(API_URL)
 socket.on("connect", () => {
   console.log("connected to the socket server")
 })
+
+socket.on("message-client-connected", message => {
+  console.log(message)
+})

@@ -9527,6 +9527,9 @@ var socket = _socket.default.connect(API_URL);
 socket.on("connect", function () {
   console.log("connected to the socket server");
 });
+socket.on("message-client-connected", function (message) {
+  console.log(message);
+});
 },{"socket.io-client":"node_modules/socket.io-client/lib/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
